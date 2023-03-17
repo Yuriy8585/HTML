@@ -1,32 +1,109 @@
 <!-- комментарий -->
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
+        <link rel="stylesheet" href="stile.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My first page</title>
+        
     </head>
     <body>
-        <h1>Hi</h1>
-        <h2>About me</h2>
+        
+        <h1 style="color: rgb(150,150,100)">
+             <!-- Стиль св-во, значение-->
+            Hi
+        </h1>
+        <h2>
+            
+            About me
+        </h2>
         <p>
-            Here i will discribe my <i>goals</i> in <strong>HTML</strong> <strong>SSC</strong>.<br> <!-- Перенос строки -->
+            Here i will discribe my <i>goals</i> in <strong>HTML</strong> <strong>CSS</strong>.<br> <!-- Перенос строки -->
         </p>
         
         <p>
             Is it difficult to learn <strong>HTML</strong>? <br> <!-- Перенос строки -->
         </p>
         
+        <!-- ссылка -->
         <a href="ya.ru"> Link to Yandex </a>
         
         <ul>
-            <li><a href="https://www.google.com">Link 1</a></li>
-            <li><a href="https://www.facebook.com">Link 2</a></li>
-            <li><a href="https://www.twitter.com">Link 3</a></li>
-            <li><a href="https://www.instagram.com">Link 4</a></li>
-            <li><a href="https://www.youtube.com">Link 5</a></li>
+            
+            <li><a style="color: rgb(150,150,100)" href="https://www.google.com"> Link to google </a></li>
+            <li><a href="https://www.facebook.com"> Link to facebook </a></li>
+            <li><a href="https://www.twitter.com"> Link to twitter </a></li>
+            <li><a href="https://www.instagram.com"> Link to instagram </a></li>
+            <li><a href="https://www.youtube.com"> Link to youtube </a></li>
           </ul>
           <hr> <!-- Нижняя полоса по экрану -->
+          <br>
+          <h1>
+            Lists<br>
+            </h1>
+          <h2>Unordered List</h2>
+          <ul> <!-- Не нумерованный список -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+          </ul>
+          
+          <h2>Ordered List</h2>
+          <ol> <!-- Нумерованный список -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+          </ol>
+          
+          <h2>Definition List</h2>
+          <dl>
+            <dt>Term 1</dt>
+            <dd>Definition 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition 2</dd>
+            <dt>Term 3</dt>
+            <dd>Definition 3</dd>
+          </dl>
+          
+          <h2>Nested List</h2>
+          <ul>
+            <li>List Item 1
+              <ul>
+                <li>Sub-item 1</li>
+                <li>Sub-item 2</li>
+                <li>Sub-item 3</li>
+              </ul>
+            </li>
+            <li>List Item 2
+              <ol>
+                <li>Sub-item 1</li>
+                <li>Sub-item 2</li>
+                <li>Sub-item 3</li>
+              </ol>
+            </li>
+            <li>List Item 3
+              <ul>
+                <li>Sub-item 1</li>
+                <li>Sub-item 2</li>
+                <li>Sub-item 3</li>
+              </ul>
+            </li>
+          </ul>
+          <p style="color: rgb(81, 81, 1)">
+            Картинка с абсолютной ссылкой
+        </p>
+          <img width="400" src="https://images.unsplash.com/photo-1537402792645-b6d9a3ac3fad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="Картинка">
+          <p>
+            Картинка с неабсолютной ссылкой
+        </p>
+          <img width= "400" src="image-07-12-22-17-27.jpeg" alt="Природа">
+
     </body>
 </html>

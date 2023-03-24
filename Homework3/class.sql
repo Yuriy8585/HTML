@@ -7,3 +7,5 @@ address VARCHAR(255) NOT NULL
 
 INSERT INTO students (id, name, age, address) VALUES (001, 'Иванов Иван', 20, 'ул. Ленина, д. 10');
 INSERT INTO students (id, name, age, address) VALUES (002, 'Петров Петр', 21, 'ул. Гагарина, д. 5');
+
+SELECT * FROM students WHERE age >= 20;

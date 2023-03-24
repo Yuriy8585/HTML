@@ -1,0 +1,105 @@
+/* Элемент, к которому мы применяем анимацию. */
+
+div {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+ 
+    -moz-animation-name: move;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-delay: 0.5s;
+    -moz-animation-iteration-count: 2;
+    -moz-animation-direction: alternate;
+ 
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0.5s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+ }
+ 
+ /* Код самой анимации. */
+ 
+ @keyframes move {
+    from {
+       transform: translateX(0);
+    }
+    to {
+       transform: translateX(100px);
+    }
+ }
+ 
+ @-moz-keyframes move {
+    from {
+       -moz-transform: translateX(0);
+    }
+    to {
+       -moz-transform: translateX(100px);
+    }
+ }
+ 
+ @-webkit-keyframes move {
+    from {
+       -webkit-transform: translateX(0);
+    }
+    to {
+       -webkit-transform: translateX(100px);
+    }
+ }
+
+ /* Список изображений */
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+ }
+ 
+ #slider li {
+    width: 680px;  /* Ширина изображения */
+    height: 320px; /* Высота изображения */
+    position: absolute;
+    top: -325px;	/* Исходное положение  (за пределами слайдера) */
+    list-style: none;
+ }
+ #slider li.firstanimation {
+    animation: cycle 25s linear infinite;
+ }
+ 
+ #slider li.secondanimation {
+    animation: cycletwo 25s linear infinite;
+ }
+ 
+ #slider li.thirdanimation {
+    animation: cyclethree 25s linear infinite;
+ }
+ 
+ #slider li.fourthanimation {
+    animation: cyclefour 25s linear infinite;
+ }
+ 
+ #slider li.fifthanimation {
+    animation: cyclefive 25s linear infinite;
+ }
+ /* Индикатор выполнения */
+
+.progress-bar {
+    position: relative;
+    top: -5px;
+    width: 680px;
+    height: 5px;
+    background: #000;
+    animation: fullexpand 25s ease-out infinite;
+ }
+ @keyframes fullexpand {
+
+ 
+    /* В этих ключевых кадрах индикатор выполнения исчезнет, а затем возобновит цикл */
+    18%, 38%, 58%, 78%, 98% { width: 100%; opacity: 0; }
+ }
+ 

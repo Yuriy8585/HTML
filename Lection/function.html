@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showMessage() {
+ let message = "Привет, это Василий!"; // локальная переменная
+ alert( message );
+}
+showMessage(); // Привет, я Василий!
+alert( message ); // <-- в этом случае будет ошибка, т.к. переменная видна только внутри функции
+        </script>
+
+        <script>
+            let name = '';
+            function getPrice() {
+                let message = "Привет, " + name + "!";
+                alert( 'Avtorization' + name );
+                setTimeout(() => {alert('ready')}, 1000);
+            }
+            getPrice();
+        </script>
+</body>
+</html>

@@ -62,7 +62,7 @@ div {
  
  #slider li {
     width: 680px;  /* Ширина изображения */
-    height: 320px; /* Высота изображения */
+    height: 350px; /* Высота изображения */
     position: absolute;
     top: -325px;	/* Исходное положение  (за пределами слайдера) */
     list-style: none;

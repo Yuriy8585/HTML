@@ -1,0 +1,28 @@
+
+
+{
+    "catalog": [
+      {
+    "goods": "яблоки",
+    "weight": 1000,
+    "categorie": "fruit",
+    "number": 150,
+    "place": 1
+    },
+      {
+        "goods": "картошка",
+        "weight": 1000,
+        "categorie": "vegetables",
+        "number": 320,
+        "place": 2
+    },
+    {
+        "goods": "banana",
+        "weight": 1000,
+        "categorie": "fruit",
+        "number": 99,
+        "place": 1 
+    }
+    ]
+  }
+

@@ -1,0 +1,45 @@
+
+<CATALOG>
+    <human>
+        <name>
+            <firstname>Карпова</firstname>
+            <secondname>Анна</secondname>
+            <thirdname>Александровна</thirdname>
+        </name>
+        <year>2008</year>
+        <form>
+            <grade>8</grade>
+            <verb>A</verb>
+        </form>
+        <adress>
+            <city>. Москва</city>
+            <street>Ленинский проспект</street>
+            <house>107</house>
+            <room>2</room>
+
+        </adress>
+        
+    </human>
+    
+    <human>
+        <name>
+            <firstname>Малышкин</firstname>
+            <secondname>Михаил</secondname>
+            <thirdname>Иванович</thirdname>
+        </name>
+        <year>2014</year>
+        <form>
+            <grade>2</grade>
+            <verb>Б</verb>
+        </form>
+        <adress>
+            <city>. Москва</city>
+            <street>Ленинградскийский проспект</street>
+            <house>11</house>
+            <room>20</room>
+
+        </adress>
+        
+    </human>
+
+</CATALOG>

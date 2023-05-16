@@ -7,13 +7,16 @@ public class Database {
     public static String[] equations;
 
     public static void main(String[] equations) { 
-    String url = "shu.sql";
-    String user = "";
-    String password = "";
+    
 
     
 
     try {
+        Database.equations = equations;
+
+        String url = "shu.db";
+        String user = "";
+        String password = "";
 
         Connection conn = DriverManager.getConnection(url, user, password);
         Statement stmt = conn.createStatement();
@@ -43,5 +46,6 @@ public class Database {
     } catch (SQLException ex) {
         System.out.println("SQL Exception: " + ex.getMessage());
     }
+    
 }
 }

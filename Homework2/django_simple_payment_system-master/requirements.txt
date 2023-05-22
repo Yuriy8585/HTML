@@ -1,0 +1,4 @@
+Django
+django-money[exchange]
+pandas
+django_countries

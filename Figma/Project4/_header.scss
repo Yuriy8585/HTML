@@ -1,0 +1,4 @@
+.head {
+    @extend .marg;
+    @include txt("sans-serif", 30px, 700, 30px);
+}

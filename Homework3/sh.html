@@ -1,31 +1,3 @@
-<?php
-	$name = 'Michael Shumacher';
-    $Job = 'F1 driver';
-    $countrycity = 'Hürth, North Rhine-Westphalia, West Germany';
-    $mail = 'Shumacher@gmail.com';
-    $phone = '+381 (999)-999-99-99';
-    $cities = ['Berlin','Dortmund','Hurth','Leipzig','Colon'];
-    //echo $cities[1];
-    $skills = [
-    	'skill_name' => ['F1 Pilot','Aerodynamics','Engineer', 'Media'],
-        'procent' => ['100%','80%','85%','50%']
-    ];
-    
-	$age = 2023-1969;
-    
-    $language = [
-    	'language_name' => ['German','English','Italian', 'Dutch'],
-        'procent' => ['100%','80%','35%','10%']
-    ];
-     
-   $exp = [
-   'title' => ['F1 Pilot','WTC Racing Pilot','Junior-Senior'],
-   'date' => ['1994-2012','1988-1994','1984-1988'],
-   'disc' => ['FIA F1','FIA European Formula 3 Cup','German Karting Championship ']
-   ];
-   
-   
-?>
 
 <!DOCTYPE html>
 <html>
@@ -37,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href= "stile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Jost', sans-serif;}
+    
     </style>
   </head>
 <body class="w3-light-grey">
@@ -61,15 +35,18 @@
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $Job;?></p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $countrycity;?></p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $mail;?></p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone;?></p>
-          <p><i class="fa fa-hourglass-half fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $age?>year(<?php echo $days ?>day)</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $Job;?> F1 driver</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $countrycity;?> Germany</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $mail;?> <b> Shumacher@gmail.com</b></p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone;?> +381 (999)-999-99-99</p>
+          <p><i class="fa fa-hourglass-half fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $age?> <birthdate> 1962 </birthdate></p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
-          <p><?php echo $skills['skill_name'][0]?></p>
+          <p> <?php echo $skills['skill_name'][0]?></p>
+          <p> F1 Pilot, WTC Racing Pilot, Junior-Senior </p>
+          <p> FIA F1, FIA European Formula 3 Cup, German Karting Championship </p>
+          <p> F1 Pilot, Aerodynamics, Engineer, Media </p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills['procent'][0]?>%"><?php echo $skills['procent'][0]?></div>
           </div>
@@ -90,17 +67,17 @@
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Language</b></p>
-          <p><?php echo $language['language_name'][0]?></p>
+          <p><?php echo $language['Italian'][0]?></p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php $language['procent'][0]?>%"><?php echo $language['procent'][0]?></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php $language['procent'][80]?>%"><?php echo $language['procent'][80]?> Italian </div>
           </div>
-          <p><?php echo $language['language_name'][1]?></p>
+          <p><?php echo $language['English'][1]?></p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php $language['procent'][1]?>%"><?php echo $language['procent'][1]?></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php $language['procent'][90]?>%"><?php echo $language['procent'][90]?>  English </div>
           </div>
-          <p><?php echo $language['language_name'][2]?></p>
+          <p><?php echo $language['French'][2]?></p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:<?php $language['procent'][2]?>%"><?php echo $language['procent'][2]?></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px; align: center; width: 20 <?php $language['procent'][95]?>%"><?php echo $language['procent'][95]?>  French </div>
           </div>
           <br>
         </div>

@@ -1,0 +1,8 @@
+@mixin txt ($ff, $fs, $fw, $lh) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $site-color;
+    padding: 20px;
+}

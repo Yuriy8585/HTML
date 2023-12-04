@@ -1,0 +1,4 @@
+
+ul.list>li.list__item{list-item-$}*5  - списки
+.icons  - иконы
+.foto.foto-$*5 - foto

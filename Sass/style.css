@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(3, 3, 3);
+}
+
+.center {
+  padding-left: calc(50% - 50vw);
+  padding-right: calc(50% - 50vw);
+}
+
+.title {
+  text-align: center;
+  color: rgb(127, 3, 3);
+}/*# sourceMappingURL=style.css.map */
